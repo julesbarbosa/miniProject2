@@ -1,44 +1,46 @@
 <html>
-    <head>
-        <meta charset="utf-8">
 
-        <title>Project #</title>
-        
-        <!-- link our CSS file -->
-        <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="utf-8">
 
-        <!-- defer makes it so that these scripts load
+    <title>Project #</title>
+
+    <!-- link our CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- defer makes it so that these scripts load
             in the background and then execute in order
             after the DOM is ready -->
 
-        <!-- D3 library goes first --> 
-        <script src="d3/d3.js" defer></script>
-        <script src="d3/d3-array.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js" defer></script>
+    <!-- D3 library goes first -->
+    <script src="d3/d3.js" defer></script>
+    <script src="d3/d3-array.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js" defer></script>
 
-        
-        
-        <!-- Then our visualization code --> 
-        <script src="visualizations/vis1.js" defer></script>
-        <script src="visualizations/vis2.js" defer></script>
-        
-        <!-- Then our code that calls the visualizations --> 
-        <script src="main.js" defer></script>
 
-    </head>
 
-    <body>
-        <div id="container">
-            <p>Name, netid</p>
-            <p>Mini-project #</p>
+    <!-- Then our visualization code -->
+    <script src="visualizations/vis1.js" defer></script>
+    <script src="visualizations/vis2.js" defer></script>
 
-            <h1>Visualization 1</h1>
-            <div id="vis1legend"></div>
-            <div id="vis1"></div>
-            
-            <h1>Visualization 2</h1>
-            <div id="vis2legend"></div>
-            <div id="vis2"></div>
-        </div>
-    </body>
+    <!-- Then our code that calls the visualizations -->
+    <script src="main.js" defer></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <p>Name, netid</p>
+        <p>Mini-project #</p>
+
+        <h1>Visualization 1</h1>
+        <div id="vis1legend"></div>
+        <div id="vis1"></div>
+
+        <h1>Visualization 2</h1>
+        <div id="vis2legend"></div>
+        <div id="vis2"></div>
+    </div>
+</body>
+
 </html>

@@ -4,8 +4,8 @@ Promise.all([
   d3.csv('data/aiddata-countries-only.csv', d3.autoType),
   d3.json('data/countries.json'),
 ]).then(([data, geoJSON]) => {
-  allYears = [...new Set(data.map(d => d.year))].sort((a,b) => d3.ascending(a,b)),
-  storeData = vis2Data(data);
+  allYears = [...new Set(data.map(d => d.year))].sort((a, b) => d3.ascending(a, b)),
+    storeData = vis2Data(data);
   storeData2 = vis1Data(data)
   top10 = top10purposes(data);
   purposes = allPurposes(data);
